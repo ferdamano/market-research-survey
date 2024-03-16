@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Market Research Survey</title>
+  </head>
+
+  <body>
+    <h1 id="title">Market Research Survey</h1>
+    <p id="description">
+      Conducting a market research survey to gauge customer satisfaction,
+      preferences, and brand perception. Questions will cover product feedback,
+      pricing sensitivity, and purchase behavior. The goal is to identify market
+      trends, understand customer needs, and enhance the overall customer
+      experience to drive business growth and competitive advantage.
+    </p>
+
+    <form id="survey-form">
+      <div>
+        <h2>Product/Service Feedback</h2>
+        <label for="dropdown"
+          >How satisfied are you with our product/service on a scale of 1 to 5?
+        </label>
+        <select id="dropdown" name="satisfiedSelect">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+        <label for="mostValuable"
+          >What features of our product/service do you find most
+          valuable?</label
+        >
+        <textarea id="mostValuable"></textarea>
+        <label for="needImprovement"
+          >Are there any aspects of our product/service that you think need
+          improvement?
+        </label>
+        <textarea id="needImprovement"></textarea>
+      </div>
+      <div>
+        <h2>Brand Perception</h2>
+        <label for="wordsPerception"></label>
+        <input id="wordsPerception" type="text" />
+        <fieldset>
+          <legend>
+            How likely are you to recommend our brand to a friend or colleague?
+          </legend>
+          <input
+            id="veryLikely"
+            value="veryLikely"
+            type="radio"
+            name="recommendRate"
+          />
+          <label for="veryLikely">Very likely</label><br />
+          <input id="likely" value="likely" type="radio" name="recommendRate" />
+          <label for="likely">Likely</label><br />
+          <input
+            id="neutral"
+            value="neutral"
+            type="radio"
+            name="recommendRate"
+          />
+          <label for="neutral">Neutral</label><br />
+          <input
+            id="unlikely"
+            value="unlikely"
+            type="radio"
+            name="recommendRate"
+          />
+          <label for="unlikely">Unlikely</label><br />
+          <input
+            id="veryUnlikely"
+            value="veryUnlikely"
+            type="radio"
+            name="recommendRate"
+          />
+          <label for="veryUnlikely">Very unlikely</label><br />
+        </fieldset>
+        <label for="compared"
+          >Compared to our competitors, what do you think are our brand's
+          strengths and weaknesses?</label
+        >
+        <textarea id="compared"></textarea>
+      </div>
+      <div>
+        <h2>Market Demand</h2>
+        <label></label>
+        <fieldset>
+          <legend>
+            How likely are you to purchase our product/service in the next six
+            months?
+          </legend>
+          <input
+            id="veryLikely"
+            value="veryLikely"
+            type="radio"
+            name="purchaseRate"
+          />
+          <label for="veryLikely">Very likely</label><br />
+          <input id="likely" value="likely" type="radio" name="purchaseRate" />
+          <label for="likely">Likely</label><br />
+          <input
+            id="neutral"
+            value="neutral"
+            type="radio"
+            name="purchaseRate"
+          />
+          <label for="neutral">Neutral</label><br />
+          <input
+            id="unlikely"
+            value="unlikely"
+            type="radio"
+            name="purchaseRate"
+          />
+          <label for="unlikely">Unlikely</label><br />
+          <input
+            id="veryUnlikely"
+            value="veryUnlikely"
+            type="radio"
+            name="purchaseRate"
+          />
+          <label for="veryUnlikely">Very unlikely</label><br />
+        </fieldset>
+        <fieldset>
+          <legend>
+            What factors influence your decision to purchase similar
+            products/services?
+          </legend>
+          <input
+            type="checkbox"
+            id="personalPref"
+            value="personalPref"
+            name="influenceFactor"
+          />
+          <label for="personalPref">Personal preferences</label>
+          <input
+            type="checkbox"
+            id="culturalPref"
+            value="culturalPref"
+            name="influenceFactor"
+          />
+          <label for="culturalPref">Cultural preferences</label>
+          <input
+            type="checkbox"
+            id="economicConditions"
+            value="economicConditions"
+            name="influenceFactor"
+          />
+          <label for="economicConditions">Economic conditions</label>
+          <input
+            type="checkbox"
+            id="marketingCampaigns"
+            value="marketingCampaigns"
+            name="influenceFactor"
+          />
+          <label for="marketingCampaigns">Marketing Campaigns</label>
+        </fieldset>
+        <label for="additionalFeatures"
+          >Are there any additional features or offerings you would like to see
+          from our brand?
+        </label>
+        <input id="additionalFeatures" type="text" />
+      </div>
+      <div>
+        <h2>Price Sensitivity</h2>
+        <fieldset>
+          <legend>
+            Do you consider our product/service to be priced competitively in
+            the market?
+          </legend>
+          <input
+            id="yesPriced"
+            value="yesPriced"
+            type="radio"
+            name="pricedCompetitively"
+          />
+          <label for="yesPriced">Yes</label>
+          <input
+            id="noPriced"
+            value="noPriced"
+            type="radio"
+            name="pricedCompetitively"
+          />
+          <label for="noPriced">No</label>
+        </fieldset>
+        <fieldset>
+          <legend>
+            Would you be willing to pay more for additional features or
+            benefits?
+          </legend>
+          <input id="yesPay" value="yesPay" type="radio" name="payMore" />
+          <label for="yesPay">Yes</label>
+          <input id="noPay" value="noPay" type="radio" name="payMore" />
+          <label for="noPay">No</label>
+        </fieldset>
+        <label for="priceRange"
+          >What price range do you believe is reasonable for our
+          product/service?
+        </label>
+        <select id="priceRange" name="reasonablePriceRange">
+          <option value="24">2-4</option>
+          <option value="56">5-6</option>
+          <option value="79">7-9</option>
+        </select>
+        <label for="priceRangeSpecific">or would you like to be specific</label>
+        <input type="number" min="1" max="9" id="priceRangeSpecific" />
+      </div>
+      <div>
+        <h2>Tell us a bit about you</h2>
+        <label for="name" id="name-label">What should we call you?</label>
+        <input type="text" id="name" required placeholder="first name" />
+        <label for="email" id="email-label"
+          >We regularly send newsletters and promotions for our customers.
+          Kindly enter your preferred email to be included.</label
+        >
+        <input type="email" id="email" required placeholder="abcd@email.com" />
+        <label for="number" id="number-label"
+          >We also would like to reach you on your mobile for exclusive perks
+          and discounts. Please enter your number for exclusive perks and
+          discounts.</label
+        >
+        <input
+          type="number"
+          id="number"
+          min="0"
+          max="9999999"
+          placeholder="9999999"
+        />
+      </div>
+      <button type="submit" id="submit">Submit</button>
+    </form>
+  </body>
+</html>
